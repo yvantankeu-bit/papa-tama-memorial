@@ -349,6 +349,14 @@ ul { list-style: none; }
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
+.bio-img--portrait {
+  object-fit: contain;
+  object-position: center;
+  background: #1a1a1a;
+  mix-blend-mode: luminosity;
+  filter: contrast(1.2) brightness(0.9);
+}
+
 .bio-img--secondary {
   position: absolute;
   bottom: 0;
