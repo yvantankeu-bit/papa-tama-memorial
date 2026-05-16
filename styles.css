@@ -160,6 +160,15 @@ ul { list-style: none; }
   line-height: 1.1;
 }
 
+.hero-en-memoire {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
 .hero-aka {
   font-family: var(--font-serif);
   font-style: italic;
