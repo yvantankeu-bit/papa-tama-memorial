@@ -33,7 +33,7 @@ fadeEls.forEach(el => fadeObserver.observe(el));
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lb-img');
 const lbCounter = document.getElementById('lb-counter');
-const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+const galleryItems = Array.from(document.querySelectorAll('#gallery .gallery-item, #gallery2 .gallery-item'));
 let currentIndex = 0;
 
 function openLightbox(index) {
