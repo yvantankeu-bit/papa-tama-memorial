@@ -234,6 +234,28 @@ ul { list-style: none; }
 }
 
 /* ==============================
+   PHOTO HOMMAGE (sous le hero)
+============================== */
+.hero-tribute-photo {
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  background: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-tribute-photo img {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 90vh;
+  object-fit: contain;
+  object-position: center top;
+  display: block;
+}
+
+/* ==============================
    NAV
 ============================== */
 .sticky-nav {
