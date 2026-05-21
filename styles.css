@@ -2,16 +2,16 @@
    VARIABLES & RESET
 ============================== */
 :root {
-  --gold: #c9a84c;
-  --gold-light: #e0c878;
-  --gold-dark: #9a7a2e;
-  --dark: #0f0d0b;
-  --dark-2: #1a1610;
-  --dark-3: #232017;
-  --cream: #f5f0e8;
-  --cream-dim: #b8a99a;
-  --text: #e8e0d4;
-  --text-muted: #8a7d70;
+  --gold: #8b6410;
+  --gold-light: #7a5808;
+  --gold-dark: #5a4006;
+  --dark: #f5f0e8;
+  --dark-2: #ede7da;
+  --dark-3: #e5ddd0;
+  --cream: #2c2218;
+  --cream-dim: #5a4e42;
+  --text: #3a2e24;
+  --text-muted: #7a6e62;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Lato', system-ui, sans-serif;
   --transition: 0.3s ease;
@@ -262,8 +262,9 @@ ul { list-style: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(15,13,11,0.95);
+  background: rgba(245,240,232,0.97);
   backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(139,100,16,0.15);
   border-bottom: 1px solid rgba(201,168,76,0.2);
   display: flex;
   justify-content: center;
@@ -320,7 +321,7 @@ ul { list-style: none; }
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 600;
-  color: var(--cream);
+  color: var(--text);
   line-height: 1.2;
 }
 
@@ -377,15 +378,13 @@ ul { list-style: none; }
   object-position: top;
   position: relative;
   z-index: 2;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
 }
 
 .bio-img--portrait {
   object-fit: contain;
   object-position: center;
-  background: #1a1a1a;
-  mix-blend-mode: luminosity;
-  filter: contrast(1.2) brightness(0.9);
+  background: var(--dark-3);
 }
 
 .bio-img--secondary {
@@ -395,14 +394,14 @@ ul { list-style: none; }
   width: 70%;
   max-height: 200px;
   z-index: 3;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
   border: 3px solid var(--dark);
 }
 
 .bio-identity h3 {
   font-family: var(--font-serif);
   font-size: 1.3rem;
-  color: var(--gold-light);
+  color: var(--gold);
   margin-bottom: 0.5rem;
 }
 
@@ -477,7 +476,7 @@ ul { list-style: none; }
 
 .engagement-card h3 {
   font-family: var(--font-serif);
-  color: var(--gold-light);
+  color: var(--gold);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -549,7 +548,7 @@ ul { list-style: none; }
   object-position: top;
   border-radius: var(--radius);
   border: 2px solid rgba(201,168,76,0.25);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
 }
 
 .testimony-photo-placeholder {
@@ -591,7 +590,7 @@ blockquote p {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.1rem !important;
-  color: var(--gold-light) !important;
+  color: var(--gold) !important;
 }
 
 .testimony-author {
@@ -604,7 +603,7 @@ blockquote p {
 
 .testimony-name {
   font-family: var(--font-serif);
-  color: var(--cream);
+  color: var(--text);
   font-size: 1rem;
 }
 
@@ -698,7 +697,7 @@ blockquote p {
 
 .programme-phase-title {
   font-family: var(--font-serif);
-  color: var(--gold-light);
+  color: var(--gold);
   font-size: 1.05rem;
   margin-bottom: 1rem;
 }
@@ -713,7 +712,7 @@ blockquote p {
   gap: 1.5rem;
   align-items: baseline;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
   font-size: 0.93rem;
 }
 
@@ -769,7 +768,7 @@ blockquote p {
    FOOTER
 ============================== */
 .footer {
-  background: #080705;
+  background: #1a1410;
   border-top: 1px solid rgba(201,168,76,0.2);
   text-align: center;
   padding: 4rem 1.5rem 3rem;
@@ -784,19 +783,19 @@ blockquote p {
 .footer-name {
   font-family: var(--font-serif);
   font-size: 1.4rem;
-  color: var(--cream);
+  color: #f5f0e8;
   letter-spacing: 0.1em;
 }
 
 .footer-dates {
-  color: var(--gold);
+  color: #c9a84c;
   font-family: var(--font-serif);
   margin: 0.4rem 0;
   font-size: 1.1rem;
 }
 
 .footer-family {
-  color: var(--text-muted);
+  color: #8a7d70;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   margin: 1rem 0 0.5rem;
@@ -806,7 +805,7 @@ blockquote p {
 .footer-prayer {
   font-family: var(--font-serif);
   font-style: italic;
-  color: var(--text-muted);
+  color: #8a7d70;
   font-size: 0.95rem;
   line-height: 1.8;
   margin-top: 1rem;
