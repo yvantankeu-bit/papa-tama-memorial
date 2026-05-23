@@ -46,7 +46,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(160deg, #0f0d0b 0%, #1e1608 50%, #0f0d0b 100%);
+  background: linear-gradient(160deg, #f0ebe0 0%, #e8dfc8 50%, #f0ebe0 100%);
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ ul { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 40%, rgba(139,100,16,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -135,7 +135,7 @@ ul { list-style: none; }
   object-fit: cover;
   object-position: center top;
   border: 3px solid var(--gold);
-  box-shadow: 0 0 40px rgba(201,168,76,0.3), 0 0 80px rgba(201,168,76,0.1);
+  box-shadow: 0 0 40px rgba(139,100,16,0.2), 0 0 80px rgba(139,100,16,0.08);
 }
 
 .hero-photo-ring {
@@ -172,7 +172,7 @@ ul { list-style: none; }
 .hero-aka {
   font-family: var(--font-serif);
   font-style: italic;
-  color: var(--gold-light);
+  color: var(--gold);
   font-size: 1.2rem;
   margin-top: 0.4rem;
 }
@@ -190,12 +190,12 @@ ul { list-style: none; }
 }
 
 .hero-cross {
-  color: var(--cream-dim);
+  color: var(--text-muted);
   font-size: 1.2rem;
 }
 
 .hero-rip {
-  color: var(--cream-dim);
+  color: var(--text-muted);
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-bottom: 1.2rem;
